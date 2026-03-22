@@ -1,7 +1,6 @@
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import { SignUpButton } from "@clerk/nextjs";
-import Link from "next/link";
 import {
   Link2,
   BarChart3,
@@ -39,9 +38,6 @@ export default async function Home(): Promise<React.JSX.Element> {
               Get started for free <ArrowRight className="size-4" />
             </Button>
           </SignUpButton>
-          <Button variant="outline" size="lg" asChild>
-            <Link href="#features">See features</Link>
-          </Button>
         </div>
       </section>
 
