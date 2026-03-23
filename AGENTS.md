@@ -85,6 +85,7 @@ drizzle.config.ts  # Drizzle Kit configuration
 - Authenticated users visiting `/` must be redirected to `/dashboard`.
 - Sign-in and sign-up must always launch as a **modal** (`mode="modal"`) — never as standalone pages.
 - All routes that require an authenticated user must be protected server-side — do not rely on client-side guards alone.
+- **NEVER use `middleware.ts`** — the `middleware` file convention is deprecated in Next.js 16 (the version used in this project). Clerk middleware (`clerkMiddleware`) must live in **`proxy.ts`** at the project root instead.
 
 ### API & Server Actions
 - See [`docs/api.md`](docs/api.md) for route handler and server action conventions.

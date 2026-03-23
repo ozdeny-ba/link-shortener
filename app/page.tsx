@@ -33,7 +33,7 @@ export default async function Home(): Promise<React.JSX.Element> {
           clicks and manage all your links from a single dashboard.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 mt-2">
-          <SignUpButton mode="modal">
+          <SignUpButton mode="modal" forceRedirectUrl="/dashboard">
             <Button size="lg" className="gap-2">
               Get started for free <ArrowRight className="size-4" />
             </Button>

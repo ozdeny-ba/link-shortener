@@ -38,7 +38,7 @@ export default async function ProtectedPage() {
 
 ### Middleware (Route-Level Protection)
 
-Use `clerkMiddleware` in `middleware.ts` for broad route protection:
+Use `clerkMiddleware` in `proxy.ts` for broad route protection (note: `middleware.ts` is deprecated in Next.js 16 — use `proxy.ts` instead):
 
 ```ts
 import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
